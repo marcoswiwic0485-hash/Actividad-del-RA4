@@ -1,0 +1,122 @@
+
+:root {
+    --crema: #FFF6EC;
+    --rosado: #F2B8C6;
+    --rosado-oscuro: #E89AAE;
+    --marron: #6B3E2E;
+    --marron-claro: #8A5A44;
+    --blanco: #FFFFFF;
+    --fuente: Arial, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: var(--fuente);
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--marron-claro);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+header {
+    background-color: var(--blanco);
+    border-bottom: 3px solid var(--rosado);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--marron);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--rosado-oscuro);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 3px solid var(--rosado);
+    background-color: var(--blanco);
+    margin-top: 2rem;
+}
+
+
+.galeria {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.producto {
+    background-color: var(--blanco);
+    border: 2px solid var(--rosado);
+    border-radius: 15px;
+    padding: 1.2rem;
+    min-width: 260px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.boton-comprar {
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--rosado);
+    border: none;
+    border-radius: 20px;
+    color: var(--marron);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-comprar:hover {
+    background-color: var(--rosado-oscuro);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.activo {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+</body>
+<main>
+    <h1>Realiza tu Pedido</h1>
+    <link rel="stylesheet" href="pedidos.css">
+    <p>Llena el formulario y nuestro equipo se pondrá en contacto para confirmar tu pedido personalizado.</p>
+
+    <form>
+        <label>Nombre completo
+            <input type="text" required placeholder="Tu nombre">
+        </label>
+
+        <label>Correo electrónico
+            <input type="email" required placeholder="tu@email.com">
+        </label>
+
+        <label>Producto
+            <select>
+                <option>Torta personalizada</option>
+                <option>Cupcakes</option>
+                <option>Galletas</option>
+                <option>Brownies</option>
+            </select>
+        </label>
+
+        <label>Detalles del pedido
+            <textarea rows="4" placeholder="Escribe tus ideas, sabores y decoración"></textarea>
+        </label>
+
+        <button class="boton-comprar">Enviar pedido</button>
+    </form>
+</main>
+</html>

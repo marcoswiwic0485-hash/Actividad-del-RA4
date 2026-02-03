@@ -1,0 +1,130 @@
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-marron);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-blanco);
+    border-bottom: 3px solid var(--color-rosado);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    font-weight: bold;
+    color: var(--color-marron);
+}
+
+nav a:hover {
+    color: var(--color-rosado-oscuro);
+}
+
+h1, h2, h3 {
+    color: var(--color-marron-claro);
+    margin-bottom: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.galeria {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.producto {
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-rosado);
+    border-radius: 15px;
+    padding: 1.2rem;
+    min-width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.precio {
+    color: var(--color-rosado-oscuro);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.boton-comprar {
+    margin-top: 1rem;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--color-rosado);
+    color: var(--color-marron);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-comprar:hover {
+    background-color: var(--color-rosado-oscuro);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.activo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.boton-comprar {
+    position: relative;
+    overflow: hidden;
+}
+
+.boton-comprar span {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.producto img {
+    transition: transform 0.6s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.1);
+}
+

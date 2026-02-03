@@ -1,0 +1,90 @@
+
+:root {
+    --crema: #FFF6EC;
+    --rosado: #F2B8C6;
+    --rosado-oscuro: #E89AAE;
+    --marron: #6B3E2E;
+    --marron-claro: #8A5A44;
+    --blanco: #FFFFFF;
+    --fuente: Arial, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: var(--fuente);
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--marron-claro);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+header {
+    background-color: var(--blanco);
+    border-bottom: 3px solid var(--rosado);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--marron);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--rosado-oscuro);
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 3px solid var(--rosado);
+    background-color: var(--blanco);
+    margin-top: 2rem;
+}
+
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contacto-info {
+    background-color: var(--blanco);
+    border: 2px solid var(--rosado);
+    border-radius: 15px;
+    padding: 1.5rem;
+    max-width: 500px;
+}

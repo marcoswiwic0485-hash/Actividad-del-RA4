@@ -1,0 +1,123 @@
+
+:root {
+    --crema: #FFF6EC;
+    --rosado: #F2B8C6;
+    --rosado-oscuro: #E89AAE;
+    --marron: #6B3E2E;
+    --marron-claro: #8A5A44;
+    --blanco: #FFFFFF;
+    --fuente: Arial, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: var(--fuente);
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--marron-claro);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+header {
+    background-color: var(--blanco);
+    border-bottom: 3px solid var(--rosado);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--marron);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--rosado-oscuro);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 3px solid var(--rosado);
+    background-color: var(--blanco);
+    margin-top: 2rem;
+}
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--blanco);
+    border: 2px solid var(--rosado);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid var(--rosado);
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--rosado-oscuro);
+}
+
+button {
+    margin-top: 1.5rem;
+    background-color: var(--rosado);
+    color: var(--marron);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--rosado-oscuro);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.activo {
+    opacity: 1;
+    transform: translateY(0);
+}
