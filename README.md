@@ -34,7 +34,6 @@ La página de la pastelería incluye:
 
 * HTML
 * CSS
-* Git
 * GitHub
 * Visual Studio Code
 
@@ -49,19 +48,6 @@ El repositorio cuenta con un historial de *commits* que refleja:
 
 Esto permite llevar un registro claro de los cambios realizados durante el desarrollo.
 
----
-
-## 📂 Estructura del proyecto
-
-```
-Actividad-del-RA4/
-│── index.html
-│── css/
-│   └── estilos.css
-│── img/
-│   └── imagenes
-└── README.md
-```
 
 ---
 
